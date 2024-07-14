@@ -29,19 +29,3 @@ Step 3 --> Create Table(Entity) employee.
 Step 4 --> insert values in the employee.
 #database connectivity --> username:-jdbc:mysql://localhost:3306/?user=root
                       --->password:your_password
-
--- Create database
-CREATE DATABASE hibernate_employee;
-USE hibernate_employee;
-CREATE TABLE Employee (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    contact DOUBLE
-);
-INSERT INTO Employee (name, email, contact) VALUES ('Rajesh Kumar', 'rajesh.kumar@example.com', 9876543210);
-INSERT INTO Employee (name, email, contact) VALUES ('Aditi Sharma', 'aditi.sharma@example.com', 8765432109);
-INSERT INTO Employee (name, email, contact) VALUES ('Suresh Reddy', 'suresh.reddy@example.com', 7654321098);
-INSERT INTO Employee (name, email, contact) VALUES ('Priya Singh', 'priya.singh@example.com', 6543210987);
-INSERT INTO Employee (name, email, contact) VALUES ('Vikram Patel', 'vikram.patel@example.com', 5432109876);
-SELECT * FROM Employee;
